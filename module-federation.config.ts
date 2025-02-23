@@ -1,8 +1,8 @@
 export const mfConfig = {
   name: "MF_Host",
   remotes: {
-    "navbar": "MF_Admon@http://localhost:3001/remoteEntry.js",
+    "remoteAdmon": "MF_Admon@http://localhost:3001/remoteEntry.js",
   },
   exposes: {},
-  shared: ["react", "react-dom"],
+  shared: ["react", "react-dom", "react-router-dom", "react-router"], 
 };
