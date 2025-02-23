@@ -41,7 +41,13 @@ export default defineConfig({
     rules: [
       {
         test: /\.svg$/,
-        type: "asset",
+        include: /icons/, // Solo SVGs en la carpeta "icons" se convierten a componentes
+        use: ['@svgr/webpack'],
+      },
+      {
+        test: /\.svg$/,
+        exclude: /icons/, // Otros SVGs se tratan como assets
+        type: 'asset/resource',
       },
       {
         test: /\.css$/,
