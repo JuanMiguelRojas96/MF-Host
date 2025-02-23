@@ -1,13 +1,11 @@
-import React from "react";
 import ReactDOM from "react-dom/client";
-
-import "./index.css";
+import Navbar from "navbar/Navbar";
 
 const App = () => (
-  <div className="container">
-    <div>Name: MF-Host</div>
-    <div>Framework: react-18</div>
-  </div>
+  <>
+    <Navbar />
+    <h1>Hola Mundo</h1>
+  </>
 );
 
 const root = ReactDOM.createRoot(document.getElementById("app") as HTMLElement);
